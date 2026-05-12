@@ -3,7 +3,7 @@
   <h3>Facultad de Minas, Geología y Civil</h3>
   <h3>Escuela Profesional de Ingeniería de Sistemas</h3>
   <br>
-  <img src="./evidencias/unsch.webp" alt="Logo UNSCH" width="150">
+  <img src="../evidencias/unsch.webp" alt="Logo UNSCH" width="150">
   <br><br>
   <h2>INFORME DE LABORATORIO 02</h2>
   <h3>Análisis Estático de Código y Calidad de Software</h3>
@@ -37,7 +37,7 @@ La ejecución inicial del linter reveló múltiples infracciones a las buenas pr
 * **Hallazgos:** 5 problemas detectados (4 advertencias por uso de variables globales `var` y 1 error crítico por el uso de comparadores débiles `==`).
 
 <div align="center">
-  <img src="./evidencias/errorqa.png" alt="Terminal ESLint Antes" width="800">
+  <img src="../evidencias/errorqa.png" alt="Terminal ESLint Antes" width="800">
   <p><i>Figura 1: Terminal mostrando los errores detectados por ESLint en la rama qaHagen.</i></p>
 </div>
 
@@ -48,12 +48,12 @@ El repositorio fue vinculado a SonarCloud para un análisis profundo. Este escan
 * **Enlace al proyecto:** [Pega aquí la URL de tu proyecto público en SonarCloud]
 
 <div align="center">
-  <img src="./evidencias/sonarcw.png" alt="Dashboard SonarCloud" width="800">
+  <img src="../evidencias/sonarcw.png" alt="Dashboard SonarCloud" width="800">
   <p><i>Figura 2: Dashboard general de SonarCloud evidenciando el estado inicial del proyecto.</i></p>
   
   <br>
   
-  <img src="./evidencias/metricas_sonar.png" alt="Métricas Detalladas" width="800">
+  <img src="../evidencias/metricas_sonar.png" alt="Métricas Detalladas" width="800">
   <p><i>Figura 3: Instantáneas detalladas de Seguridad, Confiabilidad y Mantenibilidad (20 Code Smells).</i></p>
 </div>
 
@@ -75,7 +75,7 @@ Se resolvieron los defectos detectados aplicando los siguientes criterios de cal
 Tras aplicar las soluciones, una nueva ejecución del linter confirmó la erradicación total de los defectos, cumpliendo con el estándar exigido en la configuración de `eslint.config.js`.
 
 <div align="center">
-  <img src="./evidencias/sinerror.png" alt="Terminal ESLint Después" width="800">
+  <img src="../evidencias/sinerror.png" alt="Terminal ESLint Después" width="800">
   <p><i>Figura 3: Terminal limpia sin errores tras la refactorización en la rama devHagen.</i></p>
 </div>
 
@@ -88,7 +88,7 @@ Al validar que la rama `devHagen` superó los controles de calidad (0 errores en
 * **Resultado:** GitHub validó la ausencia de conflictos lógicos, permitiendo un *Merge automático* exitoso, consolidando el código limpio en producción.
 
 <div align="center">
-  <img src="./evidencias/merge.png" alt="Evidencia de Merge" width="800">
+  <img src="../evidencias/merge.png" alt="Evidencia de Merge" width="800">
   <p><i>Figura 4: Confirmación del Pull Request exitoso y fusión a la rama main (Estado Merged).</i></p>
 </div>
 
@@ -111,7 +111,7 @@ Para cumplir con los estándares de infraestructura y asegurar la portabilidad d
 Se utilizó la terminal para realizar el "pull" de la imagen oficial y levantar el contenedor en segundo plano.
 
 <div align="center">
-  <img src="./docker/sonar_pull.png" alt="Pull de SonarQube" width="800">
+  <img src="../docker/sonar_pull.png" alt="Pull de SonarQube" width="800">
   <p><i>Figura 6: Descarga de capas de la imagen sonarqube:lts-community desde Docker Hub.</i></p>
 </div>
 
@@ -119,7 +119,7 @@ Se utilizó la terminal para realizar el "pull" de la imagen oficial y levantar 
 Validación del estado del contenedor desde el Dashboard de Docker Desktop, confirmando el mapeo del puerto 9000.
 
 <div align="center">
-  <img src="./docker/sonar_docker_desktop.png" alt="Estado en Docker Desktop" width="800">
+  <img src="../docker/sonar_docker_desktop.png" alt="Estado en Docker Desktop" width="800">
   <p><i>Figura 7: Monitorización del contenedor 'sonarqube-local' activo y consumo de recursos.</i></p>
 </div>
 
@@ -127,7 +127,7 @@ Validación del estado del contenedor desde el Dashboard de Docker Desktop, conf
 Acceso inicial al servidor local y actualización obligatoria de las credenciales de administrador (Protocolo de seguridad de SonarQube).
 
 <div align="center">
-  <img src="./docker/sonar_login.png" alt="Update Password" width="600">
+  <img src="../docker/sonar_login.png" alt="Update Password" width="600">
   <p><i>Figura 8: Interfaz de actualización de contraseñas tras el primer despliegue.</i></p>
 </div>
 
@@ -135,6 +135,6 @@ Acceso inicial al servidor local y actualización obligatoria de las credenciale
 Panel principal de SonarQube listo para la creación de proyectos manuales o integración con DevOps platforms.
 
 <div align="center">
-  <img src="./docker/sonar_dashboard.png" alt="SonarQube Dashboard" width="800">
+  <img src="../docker/sonar_dashboard.png" alt="SonarQube Dashboard" width="800">
   <p><i>Figura 9: Servidor local operativo y listo para el análisis estático de código.</i></p>
 </div>
