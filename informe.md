@@ -37,7 +37,7 @@ La ejecución inicial del linter reveló múltiples infracciones a las buenas pr
 * **Hallazgos:** 5 problemas detectados (4 advertencias por uso de variables globales `var` y 1 error crítico por el uso de comparadores débiles `==`).
 
 <div align="center">
-  <img src="errorqa.png" alt="Terminal ESLint Antes" width="800">
+  <img src="./evidencias/errorqa.png" alt="Terminal ESLint Antes" width="800">
   <p><i>Figura 1: Terminal mostrando los errores detectados por ESLint en la rama qaHagen.</i></p>
 </div>
 
@@ -48,12 +48,12 @@ El repositorio fue vinculado a SonarCloud para un análisis profundo. Este escan
 * **Enlace al proyecto:** [Pega aquí la URL de tu proyecto público en SonarCloud]
 
 <div align="center">
-  <img src="./sonarcw.png" alt="Dashboard SonarCloud" width="800">
+  <img src="./evidencias/sonarcw.png" alt="Dashboard SonarCloud" width="800">
   <p><i>Figura 2: Dashboard general de SonarCloud evidenciando el estado inicial del proyecto.</i></p>
   
   <br>
   
-  <img src="./metricas_sonar.png" alt="Métricas Detalladas" width="800">
+  <img src="./evidencias/metricas_sonar.png" alt="Métricas Detalladas" width="800">
   <p><i>Figura 3: Instantáneas detalladas de Seguridad, Confiabilidad y Mantenibilidad (20 Code Smells).</i></p>
 </div>
 
@@ -75,7 +75,7 @@ Se resolvieron los defectos detectados aplicando los siguientes criterios de cal
 Tras aplicar las soluciones, una nueva ejecución del linter confirmó la erradicación total de los defectos, cumpliendo con el estándar exigido en la configuración de `eslint.config.js`.
 
 <div align="center">
-  <img src="sinerror.png" alt="Terminal ESLint Después" width="800">
+  <img src="./evidencias/sinerror.png" alt="Terminal ESLint Después" width="800">
   <p><i>Figura 3: Terminal limpia sin errores tras la refactorización en la rama devHagen.</i></p>
 </div>
 
@@ -88,7 +88,7 @@ Al validar que la rama `devHagen` superó los controles de calidad (0 errores en
 * **Resultado:** GitHub validó la ausencia de conflictos lógicos, permitiendo un *Merge automático* exitoso, consolidando el código limpio en producción.
 
 <div align="center">
-  <img src="merge.png" alt="Evidencia de Merge" width="800">
+  <img src="./evidencias/merge.png" alt="Evidencia de Merge" width="800">
   <p><i>Figura 4: Confirmación del Pull Request exitoso y fusión a la rama main (Estado Merged).</i></p>
 </div>
 
