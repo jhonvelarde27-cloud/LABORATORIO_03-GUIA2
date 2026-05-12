@@ -3,7 +3,7 @@
   <h3>Facultad de Minas, Geología y Civil</h3>
   <h3>Escuela Profesional de Ingeniería de Sistemas</h3>
   <br>
-  <img src="unsch.webp" alt="Logo UNSCH" width="150">
+  <img src="./evidencias/unsch.webp" alt="Logo UNSCH" width="150">
   <br><br>
   <h2>INFORME DE LABORATORIO 02</h2>
   <h3>Análisis Estático de Código y Calidad de Software</h3>
@@ -104,3 +104,37 @@ Para dar por concluido el laboratorio, se certifica el cumplimiento de los sigui
 - [x] Corrección de variables globales (`var` actualizados a `const`/`let`).
 - [x] Corrección de comparadores no estrictos (`==` refactorizado a `===`).
 - [x] Control
+## 6. Implementación Local con Docker (SonarQube)
+Para cumplir con los estándares de infraestructura y asegurar la portabilidad del entorno de QA, se desplegó una instancia local de SonarQube utilizando contenedores Docker sobre WSL 2.
+
+### 6.1. Descarga y Despliegue de Imagen
+Se utilizó la terminal para realizar el "pull" de la imagen oficial y levantar el contenedor en segundo plano.
+
+<div align="center">
+  <img src="./docker/sonar_pull.png" alt="Pull de SonarQube" width="800">
+  <p><i>Figura 6: Descarga de capas de la imagen sonarqube:lts-community desde Docker Hub.</i></p>
+</div>
+
+### 6.2. Gestión de Contenedores
+Validación del estado del contenedor desde el Dashboard de Docker Desktop, confirmando el mapeo del puerto 9000.
+
+<div align="center">
+  <img src="./docker/sonar_docker_desktop.png" alt="Estado en Docker Desktop" width="800">
+  <p><i>Figura 7: Monitorización del contenedor 'sonarqube-local' activo y consumo de recursos.</i></p>
+</div>
+
+### 6.3. Configuración de Seguridad
+Acceso inicial al servidor local y actualización obligatoria de las credenciales de administrador (Protocolo de seguridad de SonarQube).
+
+<div align="center">
+  <img src="./docker/sonar_login.png" alt="Update Password" width="600">
+  <p><i>Figura 8: Interfaz de actualización de contraseñas tras el primer despliegue.</i></p>
+</div>
+
+### 6.4. Dashboard Operativo
+Panel principal de SonarQube listo para la creación de proyectos manuales o integración con DevOps platforms.
+
+<div align="center">
+  <img src="./docker/sonar_dashboard.png" alt="SonarQube Dashboard" width="800">
+  <p><i>Figura 9: Servidor local operativo y listo para el análisis estático de código.</i></p>
+</div>
